@@ -3,3 +3,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body, #main-form {
+    display: flex;
+    width: 100%;
+}
+
+img {
+    width: 37%;
+    height: auto;
+}
+
+#header {
+    width: 80%;
+    margin: 100px auto;
+}
+
+h1 + h1 {
+    margin: 50px auto;
+}
