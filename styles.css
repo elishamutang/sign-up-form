@@ -43,9 +43,9 @@ h1 {
 
 form {
     display: flex;
-    border: 2px solid red;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-bottom: 20px;
 }
 
 .content > h2 {
