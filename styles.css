@@ -56,6 +56,11 @@ form > * {
     margin: 20px 60px 0 0;
 }
 
+.formInput {
+    display: flex;
+    flex-direction: column;
+}
+
 input {
     appearance: none;
     outline: none;
@@ -66,9 +71,4 @@ input {
     border: 2px solid #E5E7EB;
     background-color: rgb(255, 255, 254);
     border-radius: 5px;
-}
-
-.formInput {
-    display: flex;
-    flex-direction: column;
 }
