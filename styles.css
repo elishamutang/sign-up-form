@@ -60,7 +60,12 @@ input {
     appearance: none;
     outline: none;
     font-size: 20px;
-    padding: 5px;
+    font-family: inherit;
+    padding: 8px;
+    margin: 5px 0;
+    border: 2px solid #E5E7EB;
+    background-color: rgb(255, 255, 254);
+    border-radius: 5px;
 }
 
 .formInput {
