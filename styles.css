@@ -86,15 +86,17 @@ input:focus {
 }
 
 /* Submit button */
-input[type="submit"] {
+button {
     padding: 20px 10px;
     background-color: rgb(95, 141, 204);
     color: white;
     border-radius: 10px;
     font-family: inherit;
+    font-size: 20px;
     font-weight: bold;
     margin: 0;
     border: none;
+    cursor: pointer;
 }
 
 #submitBtn {
