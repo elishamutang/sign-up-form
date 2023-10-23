@@ -71,4 +71,9 @@ input {
     border: 2px solid #E5E7EB;
     background-color: rgb(255, 255, 254);
     border-radius: 5px;
+    cursor: pointer;
+}
+
+input:focus {
+    border-color: rgb(113, 172, 255);
 }
