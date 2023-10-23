@@ -5,19 +5,18 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body, #main-form {
+    width: 100%; 
+}
+
 body {
     display: flex;
-    width: 100%;
     background-color: rgb(246, 246, 246);
 }
 
 img {
     width: 37%;
     height: auto;
-}
-
-#main-form {
-    width: 100%;
 }
 
 h1 {
