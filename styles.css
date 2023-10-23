@@ -59,6 +59,8 @@ form > * {
 input {
     appearance: none;
     outline: none;
+    width: 300px;
+    height: 3em;
 }
 
 .formInput {
