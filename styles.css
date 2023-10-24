@@ -97,6 +97,14 @@ button {
     margin: 0;
     border: none;
     cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background: white;
+    color: rgb(78, 117, 166);
 }
 
 #submitBtn {
@@ -118,4 +126,11 @@ a {
     text-decoration: none;
     font-weight: bold;
     color: rgb(78, 117, 166);
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="password"]:invalid,
+input[type="tel"]:invalid {
+    border: 1px solid red;
 }
