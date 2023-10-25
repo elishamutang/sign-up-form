@@ -2,25 +2,32 @@
 const pwd = document.getElementById("userPwd");
 const pwdConfirm = document.getElementById("userPwdConfirm");
 
-// Target 'Create Account' button
-const createAcc = document.querySelector("button");
-
+// Detects user input
 pwd.addEventListener("change", checkPwd);
 pwdConfirm.addEventListener("change", checkPwd);
 
 pwd.addEventListener("input", checkPwd);
 pwdConfirm.addEventListener("input", checkPwd);
 
-
+// Compare between the two password fields.
 function checkPwd(e) {
-    console.log(e.target.value);
-    console.log(pwdConfirm.value);
+
+    const pwdError = document.querySelectorAll("div.formInput span.error");
 
     if(pwd.value == pwdConfirm.value) {
-        console.log("true");
+        
+        pwdError.forEach((error) => {
+            error.style.display = "none";
+        })
+
     } else {
-        console.log("false");
+
         pwd.setAttribute("class", "error");
         pwdConfirm.setAttribute("class", "error");
+
+        pwdError.forEach((error) => {
+            error.style.display = "";
+        })
+
     }
 }
