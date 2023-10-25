@@ -153,13 +153,21 @@ a {
     color: rgb(78, 117, 166);
 }
 
-input[type="text"]:required {
-    border: 1px solid black;
-}
-
 input[type="text"]:invalid,
 input[type="email"]:invalid,
 input[type="password"]:invalid,
 input[type="tel"]:invalid {
     border: 1px solid red;
+}
+
+input + span {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+input.error + span::after {
+    position: absolute;
+    content: "Passwords do not match.";
+    font-size: 14px;
+    color: red;
 }
