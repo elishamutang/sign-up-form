@@ -13,12 +13,15 @@ pwdConfirm.addEventListener("input", checkPwd);
 function checkPwd(e) {
 
     const pwdError = document.querySelectorAll("div.formInput span.error");
+    const createAccBtn = document.querySelector("button");
 
     if(pwd.value == pwdConfirm.value) {
         
         pwdError.forEach((error) => {
             error.style.display = "none";
         })
+
+        createAccBtn.disabled = false;
 
     } else {
 
@@ -28,6 +31,8 @@ function checkPwd(e) {
         pwdError.forEach((error) => {
             error.style.display = "";
         })
+
+        createAccBtn.disabled = true;
 
     }
 }
