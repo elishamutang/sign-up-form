@@ -47,13 +47,21 @@ body {
     font-size: 150px;
 }
 
+#image div:last-child {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/* Heading styling */
 #main-form > h1 {
     font-size: 25px;
     padding: 0 0 0 50px;
     width: 80%;
 }
 
-/* Heading styling */
 #main-form h1:first-child {
     margin-top: 60px;
 }
