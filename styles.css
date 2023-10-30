@@ -180,6 +180,7 @@ button:focus {
 
 #logIn {
     margin-left: 50px;
+    margin-bottom: 12px;
     font-family: inherit;
     font-size: 20px;
 }
