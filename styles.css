@@ -31,6 +31,8 @@ body {
 #image {
     overflow: hidden;
     background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     flex: 1 0 35%;
 }
